@@ -1,0 +1,53 @@
+╰── ray submit golem-cluster.yaml hash_cracker_ray.py --length 4 --num-chunks 16 de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec
+2024-01-13 22:08:19,265 WARNING util.py:252 -- Dropping the empty legacy field head_node. head_nodeis not supported for ray>=2.0.0. It is recommended to removehead_node from the cluster config.
+2024-01-13 22:08:19,265 WARNING util.py:252 -- Dropping the empty legacy field worker_nodes. worker_nodesis not supported for ray>=2.0.0. It is recommended to removeworker_nodes from the cluster config.
+Checking External environment settings
+Ray On Golem 0.6.1
+  Not starting webserver, as it's already running
+
+  Running Ray on Golem on the mainnet requires GLM and MATIC tokens on the Polygon blockchain (see: https://docs.golem.network/docs/creators/ray/mainnet).
+  Your wallet:
+    
+    Status for account: 0xcb7ec8a19329fb182dae15888507bdddd8c96b35
+    Payment Driver status: OK
+    
+    ┌────────────────────┬────────────────┬────────────────────────────┬─────────────┬────────────┬────────────────────────────┬────────────────┐
+    │  platform          │  total amount  │  reserved                  │  amount     │  incoming  │  outgoing                  │  gas           │
+    ├────────────────────┼────────────────┼────────────────────────────┼─────────────┼────────────┼────────────────────────────┼────────────────┤
+    │  driver: erc20     │  9.2798 GLM    │  8.990915938387527779 GLM  │  accepted   │  0 GLM     │  0.161023727612365761 GLM  │  1.3503 MATIC  │
+    │  network: polygon  │                │                            │  confirmed  │  0 GLM     │  0.147056300384682421 GLM  │                │
+    │  token: GLM        │                │                            │  requested  │  0 GLM     │  0.161995954310987981 GLM  │                │
+    └────────────────────┴────────────────┴────────────────────────────┴─────────────┴────────────┴────────────────────────────┴────────────────┘
+  
+  You can use the Golem Onboarding portal to top up: https://golemfactory.github.io/onboarding_production/?yagnaAddress=0xcb7ec8a19329fb182dae15888507bdddd8c96b35
+
+DISCLAIMER: Please keep in mind that in its current stage, the Onboarding Portal is an EXPERIMENTAL product. Even though it is functional, we do not recommend using it unless you wish to help us beta-test this feature. You'll find more information on `#Payment UX` discord channel https://discord.com/channels/684703559954333727/1136984764197380096
+  
+Fetched IP: 192.168.0.3
+2024-01-13 22:08:26,515 WARNING util.py:252 -- Dropping the empty legacy field head_node. head_nodeis not supported for ray>=2.0.0. It is recommended to removehead_node from the cluster config.
+2024-01-13 22:08:26,515 WARNING util.py:252 -- Dropping the empty legacy field worker_nodes. worker_nodesis not supported for ray>=2.0.0. It is recommended to removeworker_nodes from the cluster config.
+Loaded cached provider configuration
+If you experience issues with the cloud provider, try re-running the command with --no-config-cache.
+Fetched IP: 192.168.0.3
+2024-01-13 17:08:26,638 INFO worker.py:1458 -- Connecting to existing Ray cluster at address: 192.168.0.3:6379...
+2024-01-13 17:08:26,676 INFO worker.py:1633 -- Connected to Ray cluster. View the dashboard at 192.168.0.3:8265 
+(scan_range pid=1124, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: DDDE, JJJK
+(scan_range pid=1126, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: xxxy, DDDE
+(scan_range pid=1116, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: rrrs, xxxy
+(scan_range pid=1120, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: a, fffg
+(scan_range pid=1123, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: lllm, rrrs
+(scan_range pid=1121, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: JJJK, PPPQ
+(scan_range pid=1115, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: fffg, lllm
+(scan_range pid=1113, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: PPPQ, VVVW
+(scan_range pid=960, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: 7778, ###$
+(scan_range pid=961, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: 1112, 7778
+(scan_range pid=965, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: VVVW, 1112
+(scan_range pid=963, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: ###$, )))*
+(scan_range pid=964, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: ???@, ___`
+(scan_range pid=959, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: ///:, ???@
+(scan_range pid=962, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: )))*, ///:
+(scan_range pid=966, ip=10.42.42.2) scanning: de6c0da53ac2bf2b6954e400767106011e4471db7a412cce0388e3441e0ad2ec: ___`, aaaaa
+(autoscaler +14s, ip=10.42.42.2) Tip: use `ray status` to view detailed cluster status. To disable these messages, set RAY_SCHEDULER_EVENTS=0.
+(autoscaler +14s, ip=10.42.42.2) Resized to 32 CPUs.
+finished in 0:00:16.468377, match found: 9Lm!
+Shared connection to 192.168.0.3 closed.
